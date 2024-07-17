@@ -2,7 +2,7 @@
   <UCard>
     <!-- hide controllers -->
     <iframe
-      src="https://res.cloudinary.com/dscbboswt/image/upload/cosmasCV_ic2yzu.pdf"
+      src="https://res.cloudinary.com/dunssu2gi/image/upload/v1721127243/gykok7rsljzjaednxdt7.pdf"
       class="w-full min-h-screen cv-frame"
     ></iframe>
   </UCard>

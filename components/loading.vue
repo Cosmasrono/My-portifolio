@@ -52,8 +52,8 @@ export default {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid rgb(11, 84, 243);
-  border-color: rgb(23, 54, 231) transparent rgb(21, 63, 252) transparent;
+  border: 6px solid orange;
+  border-color: orange transparent orange transparent;
   animation: ThreeDots 1.2s linear infinite;
 }
 

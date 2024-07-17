@@ -21,7 +21,7 @@ const isDark = computed({
 <template>
   <ClientOnly>
     <UButton @click="isDark = !isDark" class="font-bold px-2 py-1.5">
-      <Icon v-if="isDark" name="ic:round-light-mode" class="h-6 w-6 text-white" />
+      <Icon v-if="isDark" name="ic:round-light-mode" class="h-6 w-6 text-white bg-blue-700" />
       <Icon v-else name="ic:round-dark-mode" class="h-6 w-6 text-white" />
     </UButton>
     <template #fallback>

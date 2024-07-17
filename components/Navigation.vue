@@ -1,15 +1,14 @@
 
- 
 <template>
   <div>
     <UButton
       @click="toggle"
-      class="text-white focus:outline-none m-1.5 rounded px-6 py-2 font-medium hover:bg-blue-700 hover:ring-4 hover:ring-blue-900 hover:opacity-80 transition duration-500 ease-in-out capitalize"
+      class="text-white bg-blue-700 focus:outline-none m-1.5 rounded px-6 py-2 font-medium hover:bg-orange-800 hover:ring-4 hover:ring-orange-900 hover:opacity-60 transition duration-500 ease-in-out capitalize"
     >
       <span>
         <Icon
           name="material-symbols:view-list"
-          class="h-6 w-6 text-white"
+          class="h-6 w-6 dark:text-black text-white"
         />
       </span>
 
@@ -18,7 +17,7 @@
     <div :class="menuClasses">
       <button
         aria-label="Close"
-        class="absolute top-3 right-3 text-5xl text-black dark:text-white cursor-pointer"
+        class="absolute top-3 right-3 text-5xl dark:text-white cursor-pointer"
         @click="toggle"
       >
         &times;
@@ -26,7 +25,7 @@
 
       <div class="container overflow-auto text-base sm:text-3xl">
         <div class="my-4">
-          <h1 class="sm:text-5xl text-black dark:text-white font-bold v-font text-4xl text-wrap p-2">
+          <h1 class="sm:text-5xl  dark:text-white font-bold v-font text-4xl text-wrap p-2">
             My Portfolio.
           </h1>
         </div>
@@ -34,17 +33,17 @@
           <div class="p-2">
             <NuxtLink @click="open = false" to="/" class="item">
               <UButton
-                class="px-5 py-3 min-w-36 font-extrabold hover:bg-blue-700 hover:ring-4 hover:ring-blue-900 hover:opacity-80 rotate-6 hover:rotate-0 transition duration-500 ease-in-out flex mx-auto justify-center items-center capitalize"
+                class="px-5 bg-blue-700 py-3 min-w-36 font-extrabold hover:bg-orange-800 hover:ring-4 hover:ring-orange-900 hover:opacity-60 rotate-6 hover:rotate-0 transition duration-500 ease-in-out flex mx-auto justify-center items-center capitalize"
               >
                 <Icon
                   name="octicon:project-template-16"
-                  class="h-6 w-6 text-white"
+                  class="h-6 w-6 dark:text-black text-white"
                 />
 
                 <span>Project</span>
                 <Icon
                   name="material-symbols:arrow-outward-rounded"
-                  class="h-6 w-6 text-white"
+                  class="h-6 w-6 dark:text-black text-white"
                 />
               </UButton>
             </NuxtLink>
@@ -52,17 +51,17 @@
           <div class="p-2">
             <NuxtLink @click="open = false" to="/About" class="item">
               <UButton
-                class="px-5 py-3 min-w-36 font-extrabold hover:bg-blue-700 hover:ring-4 hover:ring-blue-900 hover:opacity-80 rotate-6 hover:rotate-0 transition duration-500 ease-in-out flex mx-auto justify-center items-center capitalize"
+                class="px-5  bg-blue-700 py-3 min-w-36 font-extrabold hover:bg-orange-800 hover:ring-4 hover:ring-orange-900 transition duration-500 ease-in-out hover:opacity-60 rotate-6 hover:rotate-0 flex mx-auto justify-center items-center capitalize"
               >
                 <Icon
                   name="material-symbols:android-contacts-outline"
-                  class="h-6 w-6 text-white"
+                  class="h-6 w-6 dark:text-black text-white"
                 />
 
                 <span>About</span>
                 <Icon
                   name="material-symbols:arrow-outward-rounded"
-                  class="h-6 w-6 text-white"
+                  class="h-6 w-6 dark:text-black text-white"
                 />
               </UButton>
             </NuxtLink>
@@ -70,29 +69,27 @@
           <div class="p-2">
             <NuxtLink @click="open = false" to="/resume" class="item">
               <UButton
-                class="px-5 py-3 min-w-36 font-extrabold hover:bg-blue-700 hover:ring-4 hover:ring-blue-900 hover:opacity-80 rotate-6 hover:rotate-0 transition duration-500 ease-in-out flex mx-auto justify-center items-center capitalize"
+                class="  bg-blue-700 px-5 py-3 min-w-36 font-extrabold hover:bg-orange-800 hover:ring-4 hover:ring-orange-900 hover:opacity-60 transition duration-500 ease-in-out rotate-6 hover:rotate-0 flex mx-auto justify-center items-center capitalize"
               >
-                <Icon name="tabler:file-cv" class="h-6 w-6 text-white" />
+                <Icon name="tabler:file-cv" class="h-6 w-6 dark:text-black text-white" />
 
                 <span>Resume</span>
                 <Icon
                   name="material-symbols:arrow-outward-rounded"
-                  class="h-6 w-6 text-white"
+                  class="h-6 w-6 dark:text-black text-white"
                 />
               </UButton>
             </NuxtLink>
           </div>
         </div>
 
-        <div class="p-2">
+        <div class="p-2" >
           <DarkMode />
         </div>
-
-        <!-- I love Both Vue(Nuxt) and React(Nextjs) -->
-
-        <footer class="text-center text-gray-500 text-xs mt-8">
+ 
+        <footer class="text-center text-gray-400 text-xs mt-8">
           <p>
-            Cosmas &copy;
+            cosmas Cheruiyot &copy;
             <span v-text="new Date().getFullYear()"></span>
           </p>
         </footer>

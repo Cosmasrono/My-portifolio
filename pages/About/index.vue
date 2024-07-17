@@ -177,7 +177,7 @@ const closeView = () => {
           </div>
         </div>
         <div class="flex flex-col items-center">
-          <h1 class="text-2xl font-bold v-font">Francis Mwaniki</h1>
+          <h1 class="text-2xl font-bold v-font">Cosmas cheruiyot</h1>
           <p
             class="max-w-lg ring-1 ring-gray-300 dark:ring-gray-700 p-2 mt-3 dark:bg-slate-950 dark:text-white rounded-md shadow-lg leading-6 tracking-wider hover:bg-gray-200 hover:dark:bg-gray-700 hover:ring-2 hover:ring-gray-700 transition duration-500 ease-in-out hover:opacity-70 cursor-text hover:border-l-4 hover:border-orange-500 hover:dark:border-orange-500"
           >

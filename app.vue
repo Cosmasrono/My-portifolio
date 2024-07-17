@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-slate-900 bg-gray-100 min-h-screen ease-zoom-in overflow-x-hidden">
+  <div class="bg-slate-800 min-h-screen ease-zoom-in overflow-x-hidden">
     <LoadingPage v-if="loading" />
     <div>
       <div class="flex justify-start items-center gap-x-3 mt-3">
@@ -7,19 +7,17 @@
       </div>
       <NuxtPage page-key="static" />
    
-      <footer
-        class="dark:text-white text-center text-xs p-3 w-full smooth overflow-hidden"
-      >
+      <footer class="text-slate-300 text-center text-xs p-3 w-full smooth overflow-hidden">
         <div class="flex justify-center items-center gap-x-2">
           <div class="flex justify-center items-center gap-x-2 smooth">
-            <Icon name="akar-icons:github-fill" class="h-6 w-6" />
+            <Icon name="akar-icons:github-fill" class="h-6 w-6 text-slate-300" />
             <a
               href="https://github.com/Cosmasrono?tab=repositories/"
               target="_blank"
               rel="noopener noreferrer"
-              class="hover:text-gray-400"
+              class="hover:text-blue-600"
             >
-              <span>Cosmas cheruiyot</span>
+              <span>Cosmas Cheruiyot</span>
             </a>
           </div>
         </div>
@@ -29,11 +27,12 @@
     </div>
   </div>
 </template>
+
 <script>
 import NavLayout from "~/components/Navigation.vue";
 import LoadingPage from "~/components/loading.vue";
 import ScrollToTop from "~/components/ScrollToTop.vue";
-import ProgressBar from "./components/progressBar.vue";
+import ProgressBar from "~/components/progressBar.vue";
 
 export default {
   components: {
@@ -57,7 +56,6 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 p,
@@ -70,13 +68,16 @@ h6 {
   font-family: "Montserrat";
   font-weight: 400;
 }
+
 .v-font {
   font-family: "Satisfy", cursive;
 }
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;
 }
+
 .page-enter-from,
 .page-leave-to {
   opacity: 0;

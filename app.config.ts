@@ -4,14 +4,14 @@ export default defineAppConfig({
     ui: {
       button: {
         default: {
-          color: 'blue'
+          color: 'orange'
         }
       },
       notifications: {
         // Show toasts at the top right of the screen
         position: 'top-0 bottom-auto'
       },
-      primary: 'blue',
+      primary: 'orange',
       
     }
   })
